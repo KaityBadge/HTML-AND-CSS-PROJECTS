@@ -153,7 +153,7 @@ the bookmark link is clicked on*/
 .zoom{
     transform: scale(1); /*Sets the base size of image 2 for
     a zoom in effect*/
-    transition: 0.5s ease-out, /*Creates a smooth transition
+    transition: 0.5s ease-out; /*Creates a smooth transition
     of the image zooming back to its original size*/
     z-index: 3; /*Sets image position in the stack layer behind 
     navbar so zoom effect does not cover the navbar*/
