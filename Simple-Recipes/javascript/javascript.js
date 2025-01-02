@@ -12,10 +12,9 @@ var modals = document.querySelectorAll(".recipe-modal");
 //Closes all modals after 10 seconds
 function hideModal() {
     setTimeout(function() {
-        var modals = document.getElementsByClassName("recipe-modal");
-        for (var i = 0; i < modals.length; i++) {
-            modals[i].style.display = "none";
-        }
+        modals.forEach(function(modal) {
+            modal.style.display = "none";
+        });
     }, 10000);
 }
 
@@ -29,7 +28,6 @@ for (var i = 0; i < btns.length; i++) {
     //the onclick event catches which button in the array of buttons
     // was clicked on and call a function that takes the event object as an argument
     btns[i].onclick = function (event) {
-        modal = document.querySelector(event.target.getAttribute
         ("href"));
         modal.style.display = "block";
     }
