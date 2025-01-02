@@ -1,0 +1,104 @@
+/*Import link for the Space Grotesk font
+from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+html {
+    font-family: "Space Grotesk", sans-serif;
+    /*Font from fonts.google.com*/
+    font-size: 20px;
+    scroll-behavior: smooth;
+    background-color: rgb(228, 219, 166);
+}
+
+/*NAVBAR*/
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+ul {
+    display: flex;
+    /*Creates a flex container so
+    elements will adjust to fill space available
+    and it will place elements side by side
+    horizontally, instead of one on top of another*/
+    list-style-type: none;
+    /*Removes default styling
+    for unordered list elements*/
+    align-items: center;
+    margin: -8px, -8px, 0px, 8px;
+    background-color: rgb(2, 71, 10);
+    border: 2px solid white;
+    outline: 10px solid rgb(2, 71, 10);
+}
+
+a {
+    display: block;
+    /*Makes <a> elements
+    in the list vertical instead of horizontail*/
+    font-size: 25px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 800px;
+    color: rgb(228, 219, 166);
+    padding: 20px;
+    /*Puts 20px of space between 
+    <a> elements*/
+    text-decoration: none;
+    /*Removes underline from
+    each link*/
+}
+
+
+/*HEADERS*/
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: rgb(2, 71, 10);
+    text-shadow: 3px 3px white;
+}
+
+h3 {
+    font-size: 40px;
+    background-color: rgb(2, 71, 10);
+    color: rgb(228, 219, 166);
+    text-align: center;
+    border: 2px solid white;
+    outline: 10px solid rgb(2, 71, 10);
+    margin: auto;
+    padding: 20px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+
+/*CONTACT US*/
+
+form {
+    display: table;
+    padding: 15px;
+    margin: auto;
+}
+
+form input {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 15px;
+    border: 3px solid grey;
+    border-radius: 5px;
+    padding: 6px;
+    margin: 10px 15px 10px 0px;
+    /*Gives space between input field boxes*/
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: rgb(2, 71, 10);
+    font-size: 20px;
+    text-align: center;
+    color: rgb(228, 219, 166)
+}

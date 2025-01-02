@@ -1,0 +1,267 @@
+/*Import link for the Pirata One font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+/*Import link for the Bondoni font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Sets font color of the paragraph elements to blue
+if the screen is smaller than 600px*/
+@media screen and (max-width: 600px){
+    p{
+        color: blue;
+    }
+}
+
+
+/*NAVBAR*/
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    background-color: rgb(136, 121, 121);
+    width: 100%;
+    top: 0px;
+    padding: 20px;
+    margin: -8px;
+    border-bottom: 5px solid rgb(196, 13, 13);
+    z-index: 9; /*Places nav bar above all content when scrolling*/
+
+}
+
+.navbar a{
+    text-decoration: none; /*Gets rid of underlined text*/
+    padding: 20px;
+    font-size: 25px;
+    color: rgb(196, 13, 13);
+    font-family: "Bondoni Moda", serif;
+    font-weight: bold;
+}
+
+.navbar a:hover{
+    background-color: rgb(196, 13, 13);
+    color: black;
+}
+
+/*VIDEO*/
+
+video{
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin: auto;
+}
+
+
+/*HEADER*/
+
+h1{
+    font-family: "Pirata One", serif;
+    font-size: 90px;
+    text-align: center;
+    text-shadow: 1px 2px rgb(196, 13, 13);
+    border: 25px;
+}
+
+p{
+    font-family: "Bodoni Moda", serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*FOOTER*/
+table{
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    margin: -8px -8px 0px -8px;
+    background-color: rgb(196, 13, 13);
+    border-top: 2px solid rgb(133, 133, 130); 
+}
+
+td p{
+    font-family: "Pirata One", serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*TABLE OF OTHER ARTISTS AT THE SHOP*/
+
+.artist-table{
+    font-family: "Bodoni Moda", serif;
+    border: 1px solid rgb(196, 13, 13);
+    border-collapse: collapse; /*Combines the cells into 
+    one single border instead of separating each cell*/
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Every other row will have this background color*/
+tr:nth-child(even){
+    background-color: rgb(179, 179, 176);
+}
+
+/*Table header background color*/
+th{
+    background-color: rgb(196, 13, 13);
+    padding: 15px;
+}
+
+td{
+    padding: 15px;
+}
+
+/*Highlights the row when hovered over with mouse*/
+tr:hover{
+    background-color: rgb(136, 121, 121);
+}
+
+
+
+/*IMAGES*/
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.img{
+    filter: contrast(70%);
+    border: 2px solid rgb(196, 13, 13);
+}
+
+.polaroid{
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.911);
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+.container{
+    text-align: center;
+    padding: 10px 20px 10px;
+}
+
+
+
+/*TEXT OVER IMAGES*/
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text{
+    position: absolute;
+    bottom: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/*FADE IN TEXT OVERLAY*/
+
+
+.fade-in{
+    position: relative;
+    width: 50%;
+}
+
+.image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5 ease;
+}
+
+/*Positions the text that fades in over the middle of image*/
+.middle{
+    transition: 0.5 ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.fade-in:hover .middle{
+    opacity: 1;
+}
+
+.fade-in:hover .image{
+    opacity: 0.3;
+}
+
+.text{
+    background-color: rgb(196, 13, 13);
+    color: white;
+    font-size: 15px;
+    padding: 16px 32px;
+}
+
+
+
+/*SHOP IMAGES*/
+.row{
+    display: flex;
+    padding: 10px;
+ 
+}
+
+.column{
+    flex: 33%;
+    padding: 30px;
+}
+
+/*TWO EQUAL COLUMNS*/
+.column{
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+
+.column:nth-child(odd){
+    background-color: rgb(179, 179, 176);
+}
+
+.column:nth-child(even){
+    background-color: rgb(136, 121, 121);
+}
+
+.row:after{
+    content: "";
+    display: flex;
+}
+
+/*Specifically targets the paragraph element in the .column class
+and will not highlight any other paragraph elements in the HTML page*/
+.column p:hover{
+    background-color: rgb(214, 214, 39);
+}
+
+
