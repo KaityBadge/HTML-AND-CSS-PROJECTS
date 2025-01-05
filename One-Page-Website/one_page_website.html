@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width, initial-scale= 1.0">
     <link href="CSS/one_page_website.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -32,6 +33,7 @@
             </a>
         </ul>
     </nav>
+
     <!--HOME SECTION-->
     </p>
     <section>
@@ -42,12 +44,67 @@
             </div>
         </header>
     </section>
-    <!--VALUES-->
+
+    <!--LIGHTBOX SECTION-->
+    <!--click on images to open the lightbox-->
+    <div class="row">
+        <div class="column">
+            <img src="images/plant1-small - Copy.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/plant2-small - Copy.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/plant3-small - Copy.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+    </div>
+
+    <!--The modal/lightbox-->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides">
+                <div class="numbertext">1/3</div>
+                <img src="images/plant1.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2/3</div>
+                <img src="images/plant2.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3/3</div>
+                <img src="images/plant3.png" style="width:100%">
+            </div>
+
+            <!--Next/Back Arrows-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--Image Captions -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!--Thumbnails images.. when clicked on the larger version of images displays-->
+            <div class="column">
+                <img class="demo" src="images/plant1-small.png" onclick="currentSlide(1)" alt="Blossoms">
+            </div>
+            <div class="column">
+                <img class="demo" src="images/plant2-small.png" onclick="currentSlide(2)" alt="Sunflowers">
+            </div>
+            <div class="column">
+                <img class="demo" src="images/plant3-small.png" onclick="currentSlide(3)" alt="Succulents">
+            </div>
+        </div>
+    </div>
+
+
+    <!--VALUES SECTION-->
     <section>
         <div>
             <div class="center" id="values">
                 <h3>CORE VALUES</h3>
-                <img src="wfvalues.jpg" alt="Picture of farmers in a field of lettuce">
+                <img src="images/wfvalues.jpg" alt="farmers with lettuce">
 
                 <p> We sell the highest quality nartual and organic foods.
                     We satisfy and delight our customers. We promote team member
@@ -63,7 +120,7 @@
         <div>
             <div class="center" id="principles">
                 <h3>LEADERSHIP PRINCIPLES</h3>
-                <img src="wfprinciples.jpg" alt="'picture of farmers gathering" width="500" height="300">
+                <img src="images/wfprinciples.jpg" alt="'picture of farmers gathering" width="500" height="300">
 
                 <p>Purpose Driven. Customer Obsession.Long-Term Thinking. Passion For Creativity. Learn and Grow.
                     Hire and Develop The Best. Think Big. Just Get It Done. Frugality. Earn Trust. Empower Our
@@ -78,7 +135,7 @@
         <div>
             <div class="center" id="purpose">
                 <h3>CORE PURPOSE</h3>
-                <img src="wfpurpose.jpg" alt="picture of cows" width="500" height="300">
+                <img src="images/wfpurpose.jpg" alt="picture of cows" width="500" height="300">
 
                 <p> Our purpose is to nourish people and the plant. We're a purpose-driven
                     company that aims to set the standards of excellence for food retailers.
@@ -121,6 +178,7 @@
         <p>Thank you for your interest</p><br>
         <p><em>Goodluck!</em></p>
     </footer>
+    <script src="JS/one_page_website.js"></script>
 </body>
 
 </html>
