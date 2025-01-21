@@ -7,11 +7,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>K.Badgley</title>
         <link rel="stylesheet" type="text/css" href="stylesheet/custom.css">
+        <!--custom CSS for multiple screen sizes-->
+        <link rel="stylesheet" type="text/css" href="stylesheet/custom-css-media.css">
+        <!--places the KB icon next to title of page-->
         <link rel="icon" type="image/x-icon" href="Images/favicon.png">
     </head>
 
     <!--BODY-->
     <body>
+
+        <!--inline JavaScript for fade-in/out effect 
+        helps to prevent flickering since browser won't have to download another script file-->
+        <script>
+            document.body.classList.add('fade-out');
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            });
+        </script>
 
         <!--NAVBAR-->
         <div class="navbar">
@@ -34,8 +46,8 @@
         </div>
 
         <!--TEXT OVER VIDEO-->
-        <div class="video_text">
-            <h1 class="title-text">Kaity Badgley's Portfolio</h1>
+        <div class="video_text screen-size">
+            <h1 style="font-size:5vw" class="title-text">Kaity Badgley's Portfolio</h1>
             <p class="center">
                 Hello, my name is Kaity Badgley.<br>
                 I'd like to welcome you to my portfolio website.<br>
@@ -53,7 +65,7 @@
             </div>
             <!--RIGHT COLUMN-->
             <div class="column_1">
-                <h1>About</h1>
+                <h1 style="font-size:3vw">About</h1>
                 <p>I am currently attending <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>, 
                     an award winning online bootcamp for coding.</p>
                 <p>My first experince of what I thought was coding was when I was 14, I would mess around on myspace
@@ -67,7 +79,7 @@
         <div class="Row" id="github">
             <!--LEFT COLUMN-->
             <div class="column_1">
-                <h1>GitHub</h1>
+                <h1 style="font-size:3vw">GitHub</h1>
                 <p>Feel free to check out the coding projects I have been working on!</p>
                 <p>Here is the link to my GitHub profile.</p>
                 <p class="center project-link">
@@ -88,12 +100,14 @@
             </div>
             <!--RIGHT COLUMN-->
             <div class="column_1 stretch_column">
-                <h1>Contact</h1>
+                <h1 style="font-size:3vw">Contact</h1>
                 <form action="https://formspree.io/f/mldenvpg" method="POST">
                     <label>Name:</label>
                         <input type="text" placeholder="Please enter your name here">
                     <label>Email:</label>
                         <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Phone Number:</label>
+                        <input type="text" id="Phone" name="Phone" placeholder="Please enter your phone number here">
                     <label>Message:</label>
                         <input type="text" id="Message" name="Message" placeholder="Please write your message here">
                         <input type="submit" value="SUBMIT">

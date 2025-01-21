@@ -232,3 +232,19 @@ footer {
     right: 0;
     overflow: hidden;
 }
+
+/**FADE IN/OUT EFFECT**/
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: 2s ease;
+}
+ /*color of the blank page before it loads and fades in*/
+html {
+    background-color: black;
+}
+
