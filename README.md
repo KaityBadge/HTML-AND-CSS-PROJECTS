@@ -1,13 +1,12 @@
 # HTML & CSS Projects
-This repository showcases the projects I've built as part of the HTML and CSS course at the Tech Academy. 
+This repository showcases *some* of the projects I've built as part of the HTML and CSS course at the Tech Academy. 
 <br>I will continue to update it as i progress through the curriculum.
 <br>Each project demonstrates practical applications of HTML and CSS, with a focus on responsive design, layout techniques, and user interface components.
 
 ### Projects Included
-- Movie Theater Website
-- Recipes Website
-- Tattoo Artist Website
-- Personal Portfolio
+- [Movie Theater Website](#movie-theatre-website)
+- [Recipes Website](#recipes-website)
+- [Personal Portfolio](#personal-portfolio)
  
 ### **Movie Theatre Website**
 A responsive single-page site designed for a fictional movie theater.
