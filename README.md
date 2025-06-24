@@ -1,34 +1,37 @@
-# HTML-AND-CSS-PROJECTS
-I am showcasing all the projects that I have created throughout the HTML and CSS course at the Tech Academy. 
-I will be adding to this repository periodically as the course continues. 
-Utilizing HTML and CSS to create awesome web pages as a learning experience.
+# HTML & CSS Projects
+This repository showcases the projects I've built as part of the HTML and CSS course at the Tech Academy. 
+<br>I will continue to update it as i progress through the curriculum.
+<br>Each project demonstrates practical applications of HTML and CSS, with a focus on responsive design, layout techniques, and user interface components.
 
-These are some of the websites I have created using CSS and HTML
+### Projects Included
 - Movie Theater Website
 - Recipes Website
 - Tattoo Artist Website
-- My Portfolio
+- Personal Portfolio
  
-### MOVIE THEATER WEBSITE
+### **Movie Theatre Website**
+A responsive single-page site designed for a fictional movie theater.
+<br> Built using **Bootstrap 5.2.3**, this project leverages several core components:
+- Nav bar with dropdown menu
+- Form controls
+- Card layouts for content presentation
+- Bootstap utility classes
+- Mobile responsiveness and constisten styling across devices
 
-This is a single page site for a Movie Theater.
+### **Recipes Website**
+A single-page website featuring simple, clean, recipe card layouts.
+<br> Built with custom CSS, this project includes:
+- Responsive nav bar with dropdown menu
+- Tables with styled <tr>,<td>, and :nth child selectors
+- Flip-style image containers for interactive content
+- Contact form with input validation
+- Media queries for responsive design
 
-This page is styled using Bootstrap 5.2.3; utilizing the navbar, navbar dropdown, form, cards, Bootstraps .btn class, and much more.
-
-### RECIPES WEBSITE
-
-This page is a single page site for Simple Recipes.
-
-It is style with CSS.
-
-It contains elements such as a nav bar with drop down menu, table, td, tr, nth child, image containers with ability to flip, and a form.
-
-This page also has styling for different screen sizes.
-
-### MY PORTFOLIO
-
-This page is designed to be an introduction to me and the work I've done.
-
-It includes a nav bar and other css styling to bring the page together. 
-
-I have included images, links, a contact form, and a video. 
+### **Personal Portfolio**
+A professional portfolio page to introduce myself and showcase my work.
+<br> Technologies used:
+- Semantic HTML structure
+- Custom CSS styling
+- Responsive nav bar
+- Embedded media -- images, external links, contact form, and a video
+- Clean layout emphasizing usability and accessibility
